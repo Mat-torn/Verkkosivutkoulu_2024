@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Otsikkoon voi kirjoittaa "title", joka paljastaa viestin, kun hiiren vie otsikon päälle-->
+    <p title="Hi there, web designer!">Hover over me for a secret message!</p>
+
+    <!--Listaan "ol", voi kirjoittaa "type, joka määrittelee listan tyypin. Esim. "type=I", = roomalaiset numerot". <li>= list items-->
+    <h1>HTML Ordered List example</h1>
+        <h3>Roman Emperors</h3>
+        <ol type="I">
+            <li>Augustus</li>
+            <li>Tiberius</li>
+            <li>Caligula</li>
+            <li>Claudius</li>
+            <li>Nero</li>
+        </ol>
+
+    <!--<ul>= unordered list, jonka sisään on laitettu list items. <ul> voi lisätä tyyliksi esim "square"-->
+    <h1>HTML Unordered List example</h1>
+        <h3>Common Fruits</h3>
+        <ul style="list-style-type:square;">
+            <li>Pears</li>
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Cherries</li>
+            <li>Lemons</li>
+        </ul>
+
+    <!--<dl>= description list. <dt>= description tags. <dd>= description term tags.-->
+    <h1>HTML Description List example</h1>
+        <h3>Coffees</h3>
+        <dl>
+            <dt>Latte</dt>
+            <dd>Espresso and milk</dd>
+            <dt>Americano</dt>
+            <dd>Espresso and hot water</dd>
+            <dt>Marocchino</dt>
+            <dd>Espresso, cocoa powder and milk foam</dd>
+        </dl>
+
+    <!--When you want to embed a list inside of another list, use a nested list. Nested list= <ul>-<li>-<ol>-<li>-->
+    <h1>HTML Nested List example</h1>
+        <h3>Most Popular Menu Items from Fast Food Restaurants</h3>
+        <ul>
+            <li>McDonald's</li>
+            <ol>
+                <li>French Fries</li>
+                <li>Big Mac</li>
+                <li>Snack Wraps</li>
+            </ol>
+            <li>Burger King</li>
+            <ol>
+                <li>Whopper</li>
+                <li>French Fries</li>
+                <li>Chicken Sandwich</li>
+            </ol>
+            <li>Taco Bell</li>
+            <ol>
+                <li>Crunchwrap Supreme</li>
+                <li>Chicken Quesadilla</li>
+                <li>Cheesy Gordita Crunch</li>
+            </ol>
+        </ul>
+
+    <!--Example of an absolute url as src value-->
+    <img
+        src="https://support.content.office.net/en-us/media/d1d9f1c2-8b67-4414-ad65-b3d0b9e5278e.png"
+        alt="Butterfly"
+    />
+
+    <!--Example of a relative url as src value-->
+    <img src="VSCodeIcon.png" alt="the Visual Studio Code icon" />
+
+    <!--Example of an error retrieving an image.-->
+    <img src="error.jpg" alt="text here should describe the image." />
+
+</body>
+</html>

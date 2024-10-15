@@ -1,0 +1,78 @@
+body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #d158ef;
+    color: white;
+  }
+  
+  /* Increase the font size of the <h1> element */
+  .header h1 {
+    font-size: 30px;
+  }
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #d598db;
+  }
+  
+ 
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .side {
+    flex: 30%;
+    background-color: #ffbafe;
+    padding: 20px;
+  }
+  
+
+  .main {
+    flex: 60%;
+    background-color: white;
+    padding: 30px;
+    font-size: 50px;
+  }
+
+
+  @media screen and (max-width: 700px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+  
+
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .footer {
+    padding: 10px;
+    text-align: center;
+    background: #d266f3;
+    color: white;
+  }
