@@ -46,7 +46,6 @@ body {
 .side {
     background-color: gray;
     padding: 20px;
-    position: left;
   }
   
 /*main text*/
@@ -83,7 +82,6 @@ body {
   .sidenav {
     height: 100%;
     width: 200px;
-    position: left;
     z-index: 1;
     top: 0;
     left: 0;
