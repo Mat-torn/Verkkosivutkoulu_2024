@@ -1,0 +1,108 @@
+body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #d158ef;
+    color: white;
+  }
+  
+/* Increase the font size of the <h1> element */
+.header h1 {
+    font-size: 30px;
+  }
+
+/*ylänavigointipalkki*/
+.navbar {
+    overflow: hidden;
+    background-color: #d598db;
+    text-align: center;
+  }
+  
+ 
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+/*sidenav box*/
+.side {
+    background-color: gray;
+    padding: 20px;
+    position: left;
+  }
+  
+/*main text*/
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 30px;
+    font-size: 35px;
+  }
+
+/*säätelevät nettisivua sopivaksi eri resoluutioihin*/
+  @media screen and (max-width: 700px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+  
+
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    background: #d266f3;
+    color: white;
+  }
+
+  /*sivunavigaatiopalkin muotoilu*/
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: left;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: gray;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: table-row;
+    border: none;
+    background: none;
+    width:100%;
+    height: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
