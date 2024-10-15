@@ -104,3 +104,8 @@ body {
     cursor: pointer;
     outline: none;
   }
+
+  /*muuttaa ylänavigointipalkin tekstin punaiseksi kun hiiren vie sen päälle*/
+  .navbar a:hover{
+    color: red;
+  }
