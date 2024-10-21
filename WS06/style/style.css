@@ -106,6 +106,6 @@ body {
   }
 
   /*muuttaa ylänavigointipalkin tekstin punaiseksi kun hiiren vie sen päälle*/
-  .navbar a:hover{
+  nav a:hover{
     color: red;
   }
