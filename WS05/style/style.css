@@ -4,7 +4,7 @@ body {
     margin-right: auto;
 }
 
-header {
+  header {
     padding: 30px;
     text-align: center;
     background: #d158ef;
@@ -17,13 +17,13 @@ header {
   }
 
 
-.navbar {
+  nav {
     overflow: hidden;
     background-color: #d598db;
   }
   
  
-  .navbar a {
+  nav a {
     float: left;
     display: block;
     color: white;
