@@ -4,7 +4,7 @@ body {
     margin-right: auto;
 }
 
-.header {
+ header {
     padding: 30px;
     text-align: center;
     background: #d158ef;
@@ -12,19 +12,19 @@ body {
   }
   
 /* Increase the font size of the <h1> element */
-.header h1 {
+ header h1 {
     font-size: 30px;
   }
 
 /*ylänavigointipalkki*/
-.navbar {
+  nav {
     overflow: hidden;
     background-color: #d598db;
     text-align: center;
   }
   
  
-  .navbar a {
+  nav a {
     float: left;
     display: block;
     color: white;
@@ -71,7 +71,7 @@ body {
     }
   }
 
-.footer {
+  footer {
     padding: 10px;
     text-align: center;
     background: #d266f3;
