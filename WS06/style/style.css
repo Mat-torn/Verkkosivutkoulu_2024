@@ -21,6 +21,8 @@ body {
     overflow: hidden;
     background-color: #d598db;
     text-align: center;
+    display: flex;
+    gap: 400px;
   }
   
  
