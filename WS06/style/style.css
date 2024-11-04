@@ -109,3 +109,10 @@ body {
   nav a:hover{
     color: red;
   }
+  
+  figure img{
+    margin: 10px;
+    border: solid;
+    border-width: 10px;
+    width: 450px;
+  }
