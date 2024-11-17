@@ -6,7 +6,8 @@ body{
 }
 
 h1{
-    color: rgb(255, 209, 233);
+    background-color: rgb(255, 136, 190);
+    color: rgb(255, 255, 255);
     font-size: 2em;
     text-align: center;
     margin: 0;
