@@ -1,91 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
-    <META NAME="Generator" CONTENT="EditPlus">
-    <META NAME="Author" CONTENT="">
-    <META NAME="Keywords" CONTENT="">
-    <META NAME="Description" CONTENT="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-    function stickyMenu () {
-        var sticky= document.getElementById ("sticky");
-        if(window.pageYOffset > 20) {
-            sticky.classList.add("sticky");
-            sticky.classList.remove("menu-ul");
-        }
-        else{
-            sticky.classList.remove("sticky");
-        }
-    }
-
-    window.onscroll = function () {
-        stickyMenu() ;
-
-    }
-    </script>
-
 </head>
 
 <body>
 
-    <div class="top-background">
-        <div class="menu" id="sticky">
-            <ul class="menu-ul">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="second.html">3D models</a></li>
-                <li><a href="third.html">Software projects</a></li>
-                <li><a href="contact.html">Contacts</a></li>
-            </ul>
-        </div>
-        <div class="page-title">MATILDA TÖRNQVIST
-            <div class="description">
-                Portfolio
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+        <div class="container-lg">
+            <a class="navbar-brand fw-bold" href="#">Matilda Törnqvist</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="second.html">Applications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="third.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fourth.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-lg-none" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a class="btn btn-outline-dark d-none d-lg-block" href="#contact">Let's Talk</a>
             </div>
         </div>
-    </div>
-
-    <div class="page-blocks">
-        <div class="title" data-aos="zoom-in">
-            About me
+    </nav>
+    
+    <section class="hero" id="hero">
+        <div class="container-lg">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <h1 class="display-4 fw-bold">Matilda Törnqvist</h1>
+                    <p>Welcome! This portfolio showcases my most relevant projects that I have made during my earlier studies and on my freetime.
+                    </p>
+                    <button class="btn btn-outline-dark btn-lg">Projects
+                    </button>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <img src="Kuvat/kuva2.JPG" class="img-fluid" alt="">
+                </div>
+            </div>
         </div>
-        <div class="flex-block">
-            <div class="appointment-flex-item" data-aos="fade-left">
-                <div class="row">
-                    <div class="column">
-                      <div class="card">
-                        <div class="container">
-                          <h2>Welcome!</h2>
-                          <p>This portfolio showcases my most relevant work that I have made on my freetime and at my earlier studies.</p>
-                          <p>Information Technology BBA student at Laurea University of applied sciences.</p>
-                        </div>
-                      </div>
+    </section>
+    
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4">Testimonials</h2>
+            <div id="carouselExample" class="carousel slide carousel-dark carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis orci enim, ac
+                            auctor ex iaculis ut. Mauris ut elit mi. Sed nec quam bibendum, congue augue ut, molestie
+                            tellus. Fusce vel semper dolor." </p>
+                        <h5>John Doe</h5>
                     </div>
+                    <div class="carousel-item">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at tortor a massa facilisis
+                            venenatis sit amet non libero. Etiam vel sem venenatis tellus laoreet feugiat eu in mi."
+                        </p>
+                        <h5>June Doe</h5>
+                    </div>
+                    <div class="carousel-item">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non metus eu sem ultrices
+                            tincidunt sit amet ac nisi. In hac habitasse platea dictumst. Aliquam pellentesque diam non
+                            eros feugiat maximus." </p>
+                        <h5>Johnny Doe</h5>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-
-    </div>
-
-    <div class="footer">
-        <div class="locations">
-            <div><br/>
-                <div class="address"><br/>00200<br/>Helsinki<br/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-                    <a href="https://www.linkedin.com/in/matilda-t%C3%B6rnqvist-822541206/" class="fa fa-linkedin"></a>
-                    <a href="https://www.instagram.com/matqvist?igsh=MTQ1aDVodDdsYThj&utm_source=qr" class="fa fa-instagram"></a></div>
-
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4">Contact info</h2>
+            <div class="row">
+                <div class="col-sm-4 mt-4">
+                    <a href="#">matilda.tornqvist@student.laurea.fi</a>
+                </div>
+                <div class="col-sm-4 mt-4">
+                    <div class="social-media">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-4">
+                    <a href="#">+1234567890</a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+    
+    <footer class="text-center p-3">
+        <div>© 2024. All Rights Reserved.</div>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous">
+    </script>
 </body>
-</html>
 
-<script>
-    AOS.init({
-        duration:1400,
-    });
-  </script>
+</html>
