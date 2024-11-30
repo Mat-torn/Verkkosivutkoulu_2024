@@ -45,10 +45,10 @@ section [class^="container"] {
     margin-inline: auto;
   }
   
-  /* NAVBAR */
-  
+  /*navigointipalkin muotoilu*/
   .navbar {
     background-color: rgb(228, 181, 120);
+    padding: 50px;
   }
   
   .navbar-nav .nav-link {
@@ -151,7 +151,6 @@ section [class^="container"] {
 
 
 /*Kuvakaruselli muotoilu*/
-
 @media screen and (min-width: 1920px) {
   section.about .container,
   section.pictures .container {
@@ -167,7 +166,6 @@ section [class^="container"] {
   }
   section.pictures .carousel-inner {
     flex-direction: column;
-    content: center;
   }
   section.pictures .carousel.carousel-fade .carousel-item {
     transition: opacity 0.5s;
