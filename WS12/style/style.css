@@ -97,7 +97,7 @@ section [class^="container"] {
     background-color: rgb(228, 181, 120);
   }
   
-  /* ABOUT */
+  /*About me*/
   
   @media screen and (min-width: 1024px) {
     section.about .container,
@@ -106,7 +106,7 @@ section [class^="container"] {
     }
   }
   
-  /* PROJECTS */
+  /*Projekti-kortit*/
   
   section.projects .card {
     max-width: 17rem;
@@ -117,7 +117,7 @@ section [class^="container"] {
     margin: 0 auto;
   }
   
-  /* TESTIMONIALS */
+  /*Suosittelijat-karusellin muotoilu*/
   
   section.testimonials .carousel-control-prev,
   section.testimonials .carousel-control-next {
@@ -139,7 +139,7 @@ section [class^="container"] {
     transition: opacity 0.5s;
   }
   
-  /* CONTACT */
+  /*Yhteystiedot*/
   section.contact .social-media a {
     padding: 0 0.5rem;
     font-size: 1.3rem;
@@ -147,4 +147,28 @@ section [class^="container"] {
 
   .footer{
     background-color: rgb(228, 181, 120);
+  }
+
+
+/*Kuvakaruselli muotoilu*/
+
+@media screen and (min-width: 1920px) {
+  section.about .container,
+  section.pictures .container {
+    width: 75%;
+  }
+}
+  section.pictures .carousel-control-prev,
+  section.pictures .carousel-control-next {
+    width: 5%;
+  }
+  section.pictures .carousel-item p {
+    max-width: 50%;
+  }
+  section.pictures .carousel-inner {
+    flex-direction: column;
+    content: center;
+  }
+  section.pictures .carousel.carousel-fade .carousel-item {
+    transition: opacity 0.5s;
   }
